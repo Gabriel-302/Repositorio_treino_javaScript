@@ -45,3 +45,13 @@
 //     console.log(numero);
 //     numero --;
 // }
+
+
+let senhaFixa = 1234;
+let senhaUsuario = Number(prompt("Digite a senha:"));
+
+while (senhaUsuario !== senhaFixa) {
+     senhaUsuario = Number(prompt("Senha Errada, tente novamente"));
+}
+
+alert(`Parabéns! Você acertou, a senha era ${senhaFixa}.`);
