@@ -1,4 +1,4 @@
-//!Exercícios condicionais
+//!Exercícios Condicionais
 
 //?Nível básico
 
@@ -84,3 +84,75 @@
 
 //*EX 1
 
+// let num1 = Number(prompt("Digite o primeiro número:"));
+// let operacao = prompt("Digite a operação (+, -, *, /):");
+// let num2 = Number(prompt("Digite o segundo número:"));
+
+// let resultado;
+
+// if (operacao === "+") {
+//   resultado = num1 + num2;
+// }
+// else if (operacao === "-") {
+//   resultado = num1 - num2;
+// }
+// else if (operacao === "*") {
+//   resultado = num1 * num2;
+// }
+// else if (operacao === "/") {
+//   if (num2 !== 0) {
+//     resultado = num1 / num2;
+//   }
+//   else {
+//     resultado = "Erro: divisão por zero!";
+//   }
+// }
+// else {
+//   resultado = "Operação inválida!";
+// }
+
+// alert(`Resultado: ${resultado}`);
+
+
+//*EX 2
+
+// let num1 = Number(prompt("Digite o primeiro número:"));
+// let num2 = Number(prompt("Digite o segundo número:"));
+// let num3 = Number(prompt("Digite o terceiro número:"));
+
+// if (num1 > num2 && num1 > num3) {
+//   alert(`O maior número é o: ${num1}`);
+// }
+// else if (num2 > num1 && num2 > num3) {
+//   alert(`O maior número é o: ${num2}`);
+// }
+// else {
+//   alert(`O maior número é o: ${num3}`);
+// }
+
+
+//*EX 3
+
+// let valor = Number(prompt("Digite o valor da compra:"));
+
+// if (valor > 100) {
+//     valor = Math.floor(valor * 0.9);
+// }
+
+// alert(`O valor é ${valor}`);
+
+
+//*EX 4
+
+let loginOriginal = "admin"
+let senhaOriginal = "1234"
+
+let login = prompt("Insira seu login:");
+let senha = prompt("Insira sua senha:");
+
+if (login === loginOriginal && senha === senhaOriginal) {
+    alert("Login bem-sucedido");
+}
+else {
+    alert("Acesso negado");
+}
