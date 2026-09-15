@@ -144,15 +144,15 @@
 
 //*EX 4
 
-let loginOriginal = "admin"
-let senhaOriginal = "1234"
+// let loginOriginal = "admin"
+// let senhaOriginal = "1234"
 
-let login = prompt("Insira seu login:");
-let senha = prompt("Insira sua senha:");
+// let login = prompt("Insira seu login:");
+// let senha = prompt("Insira sua senha:");
 
-if (login === loginOriginal && senha === senhaOriginal) {
-    alert("Login bem-sucedido");
-}
-else {
-    alert("Acesso negado");
-}
+// if (login === loginOriginal && senha === senhaOriginal) {
+//     alert("Login bem-sucedido");
+// }
+// else {
+//     alert("Acesso negado");
+// }
