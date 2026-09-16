@@ -1,18 +1,18 @@
-// let nome = "Diogo";
-// let idade = 30;
+//! let nome = "Diogo";
+//! let idade = 30;
 
-// // CONCATENAÇÃO
+//* CONCATENAÇÃO
 // console.log("Nome: " + nome + ", idade: " + idade);
 
-// // INTERPOLAÇÃO
+//* INTERPOLAÇÃO
 // console.log(`Nome: ${nome}, idade: ${idade}`);
 
 // console.log(typeof nome);
 // console.log(typeof idade);
 
 
-// let soma = "5" + 3; // 53
-// let sub = "5" - 3; // 2
+// let soma = "5" + 3; //? 53
+// let sub = "5" - 3; //? 2
 
 // console.log(soma);
 // console.log(sub);
@@ -21,25 +21,25 @@
 // console.log(typeof sub);
 
 // convertendo valores
-// let numero = "ab" // string
+// let numero = "ab" //? string
 
-// let convertido = Number(numero) // converte o valor para number
+// let convertido = Number(numero) //? converte o valor para number
 
 // console.log(typeof convertido);
 
 
-// OPERADORES RELACIONAIS
+//* OPERADORES RELACIONAIS
 
-// VALIDA IGUALDADE DE VALOR (SOMENTE VALOR)
+//? VALIDA IGUALDADE DE VALOR (SOMENTE VALOR)
 // "10" == 10 -> true
 
-// VALIDO IGUALDADE DE VALOR E TIPO DE DADO
+//? VALIDA IGUALDADE DE VALOR E TIPO DE DADO
 // "10" === 10 -> false
 
 
-// &&
-// ||
-// !
+//? &&
+//? ||
+//? !
 
 // let opcao = 2
 
@@ -51,7 +51,7 @@
 // }
 
 
-// // ESTRUTURA DE REPETIÇÃO
+//* ESTRUTURA DE REPETIÇÃO
 // let frutas = ["Maçã", "Banana", "Acerola", "Uva"];
 
 // console.log(frutas);
@@ -63,10 +63,10 @@
 // frutas.forEach(fruta => console.log(`Fruta: ${fruta}`));
 
 
-// FUNÇÕES NATIVAS JS
+//* FUNÇÕES NATIVAS JS
 
-// FUNÇÃO MAP()
-// Percorre uma lista e cria uma nova lista com base em uma condição
+//* FUNÇÃO MAP()
+//* Percorre uma lista e cria uma nova lista com base em uma condição
 
 // let numeros = [1, 2, 3, 4]
 
@@ -74,42 +74,42 @@
 //     return num * 2
 // })
 
-// // numerosDobrados = [2, 4, 6, 8]
+//? numerosDobrados = [2, 4, 6, 8]
 // console.log(numerosDobrados);
 
-// // ou assim:
-// // Arrow function com retorno implícito
+//? ou assim:
+//? Arrow function com retorno implícito
 
 // let numerosDobradosArrow = numeros.map(num => num * 2);
 
 
-// FILTER
-// Filtra os elementos com base em uma condição
+//* FILTER
+//* Filtra os elementos com base em uma condição
 
 // let numeros = [5, 10, 15, 20];
 
 // let maioresQueDez = numeros.filter(num => num > 10);
 
-// // maioresQueDez = [15, 20]
+// maioresQueDez = [15, 20]
 // console.log(maioresQueDez);
 
 
-// REDUCE
-// Reduz os valores de uma array para um único valor
+//* REDUCE
+//* Reduz os valores de uma array para um único valor
 
 // let numeros = [1, 2, 3, 4];
 
-// // acumulador inicia em 0
-// // variavel auxiliar
-// // acumulador começa em 0 e soma com o auxiliar até o último valor do array
+//? acumulador inicia em 0
+//? variavel auxiliar
+//? acumulador começa em 0 e soma com o auxiliar até o último valor do array
 
 // let soma = numeros.reduce((acumulador, auxiliar) => acumulador + auxiliar, 0);
 
 // console.log(soma);
 
 
-// FIND
-// Retorna o primeiro elemento que atende a condição
+//* FIND
+//* Retorna o primeiro elemento que atende a condição
 
 // let produtos = [
 //     { id: 1, nome: "Teclado", preco: 50}, //? produto
@@ -121,10 +121,10 @@
 
 // console.log(item);
 
-//* DIFERENÇA ENTRE FILTER E FIND 
-//* find -> retorna somente o primeiro elemento que ele encontra com a condição
-//* filter -> retorna todos os elementos que encontra com a condição
-//* arrow function /               função lambda
+//! DIFERENÇA ENTRE FILTER E FIND 
+//? find -> retorna somente o primeiro elemento que ele encontra com a condição
+//? filter -> retorna todos os elementos que encontra com a condição
+//? arrow function /               função lambda
 // let itemFiltrado = produtos.filter(produto => produto.id == 2);
 
 // console.log(itemFiltrado);
@@ -195,8 +195,8 @@
 //* SORT
 //* Ordena os elementos do array
 
-let numeros = [3, 10, 5, 2, 4,];
-let letras = ["c", "a", "x", "h",]
+// let numeros = [3, 10, 5, 2, 4,];
+// let letras = ["c", "a", "x", "h",]
 
 //? para letras
 // letras.sort();
@@ -205,3 +205,156 @@ let letras = ["c", "a", "x", "h",]
 //? para números
 // numeros.sort((a, b) => a - b);
 // console.log(numeros);
+
+
+//* REVERSE
+//* Inverte a ordem dos elementos no array
+// let numeros = [1, 2, 3];
+
+// numeros.reverse();
+// console.log(numeros); //? [3, 2, 1]
+
+
+//* JOIN
+//* Junta os elementos de um array em uma string
+// let palavras = ["JS", "é", "top"];
+
+// let frase = palavras.join(" ");
+// console.log(frase); //? "JS é top"
+
+
+//* ADICIONANDO E REMOVENDO ELEMENTOS DO ARRAY
+//* PUSH
+//* POP
+//* SHIFT
+//* UNSHIFT
+
+// let lista = ["A", "B"];
+
+//? PUSH -> Adiciona elementos no final do array
+// lista.push("C"); //? adicionando
+// console.log(lista);
+
+//? POP -> Remove o elemento no final da lista
+// lista.pop(); //? removendo
+// console.log(lista);
+
+//? SHIFT -> Remove elemento no começo lista
+// lista.shift(); //? removendo
+// console.log(lista);
+
+//? UNSHIFT -> Adicionar elementos no início da lista
+// lista.unshift("A"); //? adicionando
+// console.log(lista);
+
+
+//* SLICE
+//* Cria uma cópia de uma parte da lista
+
+/* 
+    array.slice(inicial, final)
+
+    inicial -> onde começa
+    final -> onde termina (não inclui a posição/indice/index)
+*/
+
+// let numeros = [1, 2, 3, 4];
+
+// let parte = numeros.slice(1, 3); //? posições do array
+// console.log(parte); //? [2, 3]
+
+
+//* SPLICE
+//* Remove ou adiciona elementos em QUALQUER POSIÇÃO
+
+/*
+    array.splice(index, count, item1, ..., itemX);
+
+    index -> indice(posição do elemento no array);
+    count -> número de elementos a serem removidos (pode ser 0);
+    item1, ..., itemX -> itens a serem adicionados;
+*/
+
+// let numeros = [1, 2, 3, 4];
+
+//? removendo elementos, sem adicionar
+// numeros.splice(1,1);
+// console.log(numeros); //? [1, 2, 3]
+
+//? removendo elementos e adicionando mais dois elementos
+// let frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+
+// frutas.splice(0, 3, "Limão", "Kiwi");
+// console.log(frutas); //? ["Limão", "Kiwi", "Manga"]
+ 
+//? adicionando elementos sem remover
+// frutas.splice(2, 0, "Limão", "Kiwi");
+// console.log(frutas); //? ["Banana", "Laranja", "Limão", "Kiwi", "Maçã", "Manga"]
+
+
+//* REPLACE 
+//* substitui uma parte da string
+
+/*
+    replace(valorProcurado, "valorQueSubstitui")
+*/
+
+// let texto = "Olá, mundo";
+
+// let novoTexto = texto.replace("mundo", "cliente");
+// console.log(novoTexto);
+
+
+//* NOSSAS FUNÇÕES
+
+//? função comum
+// function exibirMensagem() {
+//     console.log("Bem vindo(a)!");
+// }
+
+// exibirMensagem();
+
+//? função com parâmetros
+// function cumprimentar(nome) {
+//     console.log(`Olá, ${nome}`);
+// }
+
+//! chamando a função
+// cumprimentar("Ana");
+// cumprimentar("Carlos");
+
+//? função com mais de um parâmetro
+// function somar(n1, n2) {
+//     let soma = n1 + n2;
+//     console.log(soma);
+
+        //? se quiser usar a váriavel soma fora da função, precisa retornar ela
+        //? return soma;
+// }
+
+// somar(2, 3);
+
+//? outra forma de fazer a função somar
+// const somar = (n1, n2) => n1 + n2;
+
+// console.log(somar(1, 2));
+
+
+//* PROMPT
+//* recebe/solicita uma informação do usuário
+//* o valor recebido pelo prompt() normalmente é string
+
+// let nome = prompt("Digite seu nome:");
+// console.log(nome);
+// alert(nome);
+
+//! recebendo um número e convertendo
+
+//? Number() -> converte de forma genérica
+// let idade = Number(prompt("Digite sua idade:"));
+
+//? ParseInt() -> converte o valor para um número inteiro
+// idade = parseInt(prompt("Digite sua idade:"));
+
+//? ParseFloat() -> converte o valor para um número decimal/ponto flutuante
+// idade = parseInt(prompt("Digite sua idade:"));
